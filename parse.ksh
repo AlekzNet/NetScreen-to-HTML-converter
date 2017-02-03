@@ -73,7 +73,7 @@ do
 	fi
 done | awk '{printf "s%%%s%%%s %s %s %s<br>%%g\n",$1,$1,$2,$3,$4}' > $TMPSEDH 
 
-./policy $1 > $TMPPOL
+./policy.ksh $1 > $TMPPOL
 
 cat $TMPPOL | while read id src dst svc fromzone tozone rest
 do
