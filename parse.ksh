@@ -49,9 +49,6 @@ for (i in output) printf "s%%%s%%%s%%g\n",i,output[i];
 }' 
 }
 
-#LEU nets
-#LEUNETS="129.159.38|129.159.39|192.18.224|129.159.36|129.159.37"
-LEUNETS=.
 
 #SED replacement rules for all groups
 grep "^set group address" $1 |  recexpand > $TMPSEDGA
